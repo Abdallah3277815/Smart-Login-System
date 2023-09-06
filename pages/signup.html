@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1>Smart Login System</h1>
+        <div class="input-fields my-3">
+          <input
+            type="text"
+            name="name"
+            id="SignUpname"
+            placeholder="Enter Your Name"
+            autocomplete="off"
+          />
+          <input
+            type="email"
+            name="email"
+            id="SignUpemail"
+            placeholder="Enter Your Email"
+            autocomplete="off"
+          />
+          <input
+            type="password"
+            name="password"
+            id="SignUppassword"
+            placeholder="Enter Your Password"
+            autocomplete="off"
+          />
+        </div>
+        <div class="button">
+          <button class="btn" onclick="signUp()">Sign Up</button>
+        </div>
+        <div class="output" id="output">
+        </div>
+        <p class="ask-account">
+          You have an account? <a href="../index.html">Sign In</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

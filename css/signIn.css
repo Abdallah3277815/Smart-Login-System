@@ -1,0 +1,75 @@
+:root{
+    --mainColor:#24353F;
+    --textColor:#17A2B8;
+    --secColor:#17A2B8;
+}
+body{
+    background-color: var(--mainColor);  
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form h1{
+   color: var(--textColor); 
+}
+.form  {
+    /* background-color: var(--mainColor); */
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 40px;
+}
+.form .input-fields input{
+    width: 100%;
+    background-color: transparent;
+    border-radius:5px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 5px 10px;
+    color:#fff;
+    transition: .4s;
+}
+.form .input-fields input::placeholder{
+    color: #ffffffc2;
+}
+.form .input-fields input:focus{
+    border: none;
+    outline: 1px solid #09c;
+    
+}
+.form  .button button {
+    width: 100%;
+    border: 1px solid #17A2B8;
+    color: var(--secColor);
+    transition: .4s ;
+}
+.form  .button button:hover{
+    background-color: var(--secColor);
+    color: #fff;
+}
+.form .ask-account{
+    color: #fff;
+    margin: 10px 0 0 0;
+}
+.form .ask-account a{
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+.form .ask-account a:hover{
+    text-decoration: underline;
+}
+@media (max-width:991.98px){
+    .form {
+        width: 95%;
+        padding: 40px 20px ;
+    }
+
+}
